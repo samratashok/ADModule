@@ -20,4 +20,5 @@ PS C:\> Import-Module C:\AD\Tools\ADModule\ActiveDirectory\ActiveDirectory.psd1
 
 PS C:\> Get-Command -Module ActiveDirectory
 
-
+## Blog 
+https://www.labofapenetrationtester.com/2018/10/domain-enumeration-from-PowerShell-CLM.html
