@@ -12,7 +12,7 @@ You can copy this DLL to your machine and use it to enumerate Active Directory w
 PS C:\> Import-Module C:\ADModule\Microsoft.ActiveDirectory.Management.dll -Verbose
 ![Alt text](/img/AD_Module.png?raw=true "ADModule")
 
-You can also use the Import-ActiveDirectory.ps1 (Thanks to PR by @Dliv3) to load the script using download-execute cradles and without writing the DLL to disk:
+You can also use the Import-ActiveDirectory.ps1 (Thanks to PR by @D1iv3) to load the script using download-execute cradles and without writing the DLL to disk:
 
 PS C:\> iex (new-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/samratashok/ADModule/master/Import-ActiveDirectory.ps1');Import-ActiveDirectory
 ![Alt text](/img/AD_Module_Array.png?raw=true "ADModule_Array")
